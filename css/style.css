@@ -1,0 +1,54 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.landing_block {
+  position: relative;
+}
+
+.desktop {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.desktop img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.mobile {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mobile img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
